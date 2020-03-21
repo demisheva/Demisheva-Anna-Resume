@@ -1,0 +1,17 @@
+.playgroud{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+    
+}
+#target{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+
+
+}
