@@ -1,0 +1,131 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .menu-btn {
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+  }
+  .menu-btn-burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: var(--main-color);
+  }
+  .menu-btn-burger::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: var(--main-color);
+  }
+  .menu-btn-burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: var(--main-color);
+  }
+  .menu-btn-burger.open {
+    transform: rotate(720deg);
+    background: transparent;
+  }
+  .menu-btn-burger.open::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .menu-btn-burger.open::after {
+    transform: rotate(-45deg);
+    width: 28px;
+    top: 0;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+    background-color: var(--background-color);
+  }
+  .nav.open {
+    visibility: visible;
+  }
+  .nav-menu {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-menu.open {
+    transform: translateY(0);
+  }
+
+  .introduction {
+    background: linear-gradient(
+        to top,
+        rgba(39, 39, 39, 0.9),
+        rgba(39, 39, 39, 0.3)
+      ),
+      url(../images/annad-small.jpg);
+    background-size: cover;
+  }
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-about,
+  .card-project {
+    flex: 100%;
+  }
+  .card-project{
+    height: 20vh;
+  }
+  .card-project::before {
+    height: 20vh;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+    grid-template-areas:
+      "heading"
+      "text-me"
+      "call-me";
+  }
+  .text-me,
+  .call-me {
+    line-height: 2rem;
+  }
+  .text-me i, .call-me i {
+    margin: 0 2px;
+  }
+
+}
+@media (max-width: 480px) {
+  /* body {
+    font-size: 14px;
+  } */
+
+  .introduction-name,
+  .introduction-name-last {
+    font-size: 2.5rem;
+  }
+  .card-about {
+    margin: 1rem 0;
+  }
+
+}
