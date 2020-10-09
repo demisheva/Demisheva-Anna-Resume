@@ -135,6 +135,7 @@ header {
   margin: 1%;
   line-height: 2rem;
   background: #0e0e0e;
+  text-align: justify;
 }
 .skills {
   margin-top: 1rem;
@@ -144,6 +145,19 @@ header {
   justify-items: stretch;
   align-items: center;
 }
+.about-me-work {
+  flex: 98%;
+  padding: 1rem;
+  margin: 1%;
+  line-height: 2rem;
+  background: #0e0e0e;
+  text-align: justify;
+}
+.work-timeline{
+  text-decoration: underline;
+  font-weight: 800;
+
+}
 .card-about {
   flex: 48%;
   padding: 1rem;
@@ -151,7 +165,8 @@ header {
   line-height: 2rem;
   background: #0e0e0e;
 }
-.card-about h3 {
+.card-about h3,
+.about-me-work h3 {
   text-align: center;
   margin: 1rem 0;
   color: var(--main-color);
