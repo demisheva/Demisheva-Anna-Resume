@@ -6,6 +6,7 @@
   --background-color: #272727;
   --main-txt-color: #e2e2e2;
   --main-color: #45c195;
+  --card-color:#000
 }
 body {
   background-color: var(--background-color);
@@ -134,7 +135,7 @@ header {
   padding: 1rem;
   margin: 1%;
   line-height: 2rem;
-  background: #0e0e0e;
+  background: var(--card-color);
   text-align: justify;
 }
 .skills {
@@ -150,10 +151,11 @@ header {
   padding: 1rem;
   margin: 1%;
   line-height: 2rem;
-  background: #0e0e0e;
+  background: var(--card-color);
   text-align: justify;
 }
 .work-timeline{
+  /* color: var(--main-color); */
   text-decoration: underline;
   font-weight: 800;
 
@@ -163,7 +165,7 @@ header {
   padding: 1rem;
   margin: 1%;
   line-height: 2rem;
-  background: #0e0e0e;
+  background: var(--card-color);
 }
 .card-about h3,
 .about-me-work h3 {
