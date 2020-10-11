@@ -3,10 +3,10 @@
   box-sizing: border-box;
 }
 :root {
-  --background-color: #272727;
-  --main-txt-color: #e2e2e2;
-  --main-color: #45c195;
-  --card-color: #010101;
+  --background-color: #313a3d;
+  --main-txt-color: #e0f2f1;
+  --main-color: #00bfa5;
+  --card-color: #272e31;
 }
 body {
   background-color: var(--background-color);
@@ -113,7 +113,7 @@ header {
     ),
     url(../images/annad.jpg);
   background-size: cover;
-  background-position-y: top;
+  background-position-y: center;
 }
 .introduction-name {
   font-size: 4rem;
