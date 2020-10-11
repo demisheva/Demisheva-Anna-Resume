@@ -6,7 +6,7 @@
   --background-color: #272727;
   --main-txt-color: #e2e2e2;
   --main-color: #45c195;
-  --card-color:#000
+  --card-color: #010101;
 }
 body {
   background-color: var(--background-color);
@@ -154,11 +154,10 @@ header {
   background: var(--card-color);
   text-align: justify;
 }
-.work-timeline{
+.work-timeline {
   /* color: var(--main-color); */
   text-decoration: underline;
   font-weight: 800;
-
 }
 .card-about {
   flex: 48%;
